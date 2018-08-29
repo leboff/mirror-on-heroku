@@ -1,0 +1,10 @@
+{
+  "name": "proxy",
+  "description": "https://www.v2ex.com/member/Raincal",
+  "env": {
+    "URL": {
+      "description": "网址",
+      "value": "https://www.google.com/"
+    }
+  }
+}
