@@ -1,3 +1,1 @@
-# /_redirects
-
-/*  https://zh.wikipedia.org/:splat 200
+/test/*  https://zh.wikipedia.org/:splat 200
