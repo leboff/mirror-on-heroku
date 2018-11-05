@@ -2,7 +2,10 @@
 const request = require('request')
 const app = express()
 
-process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = 0;
+if(process.env.haha == "NoCheckCertificate") {
+    process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = 0;
+}
+   
 app.use('/', (req, res) =>{
     const url = process.env.URL + req.url
     req.pipe(request(url)).pipe(res)
