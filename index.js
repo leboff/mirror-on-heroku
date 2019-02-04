@@ -7,7 +7,7 @@ if(process.env.haha == "NoCheckCertificate") {
 }
    
 app.use('/', (req, res) =>{
-    const url = process.env.URL + req.url
+    const url = req.url
     req.pipe(request(url)).pipe(res)
 })
 
